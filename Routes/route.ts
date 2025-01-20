@@ -9,12 +9,15 @@ const client = new vision.ImageAnnotatorClient({
   keyFilename: path.join(__dirname, "..", 'google-cloud-credentials.json'),
 });
 router.get("/", (req: Request, res: Response) => {
+
   console.log("Server is running");
   res.send("Server is running");
 });
 
+
 router.post(
-  '/',
+  '/',()=>{console.log("hello")
+  },
   upload.fields([
     { name: 'frontImage', maxCount: 1 },
     { name: 'backImage', maxCount: 1 },

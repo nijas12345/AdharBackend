@@ -16,7 +16,9 @@ router.get("/", (req, res) => {
     console.log("Server is running");
     res.send("Server is running");
 });
-router.post('/', multer_1.upload.fields([
+router.post('/', () => {
+    console.log("hello");
+}, multer_1.upload.fields([
     { name: 'frontImage', maxCount: 1 },
     { name: 'backImage', maxCount: 1 },
 ]), async (req, res) => {
