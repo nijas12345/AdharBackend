@@ -16,8 +16,7 @@ router.get("/send", (req: Request, res: Response) => {
 
 
 router.post(
-  '/',()=>{console.log("hello")
-  },
+  '/',
   upload.fields([
     { name: 'frontImage', maxCount: 1 },
     { name: 'backImage', maxCount: 1 },

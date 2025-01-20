@@ -12,7 +12,7 @@ dotenv_1.default.config();
 app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: true }));
 app.use((0, cors_1.default)({
-    origin: ["https://ocr-adhar.vercel.app", "http://localhost:5173"],
+    origin: ["https://ocr-adhar.vercel.app", "http://localhost:5174"],
     credentials: true,
 }));
 app.use("/", route_1.default);
