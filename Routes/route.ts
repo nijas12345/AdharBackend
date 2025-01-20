@@ -8,7 +8,7 @@ const router = express.Router();
 const client = new vision.ImageAnnotatorClient({
   keyFilename: path.join(__dirname, "..", 'google-cloud-credentials.json'),
 });
-router.get("/", (req: Request, res: Response) => {
+router.get("/send", (req: Request, res: Response) => {
 
   console.log("Server is running");
   res.send("Server is running");
