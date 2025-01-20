@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon --exec ts-node -P tsconfig.json app.ts",
+    "start": "nodemon --exec ts-node -P tsconfig.json app.ts --max-old-space-size=4096 app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
