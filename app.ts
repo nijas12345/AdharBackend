@@ -19,9 +19,9 @@ app.use(
 app.use("/", router);
 
 // Ensure the port is a number, fallback to 10000 if not set
-const port = Number(process.env.PORT) || 10000;
+const port = process.env.PORT || 8000;
 
-app.listen(port, "0.0.0.0", () => {
+app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
 
